@@ -7,8 +7,14 @@ class FerretekCrawlerSpider(scrapy.Spider):
     name = 'ferretek_crawler'
     allowed_domains = ['herramientas.cl']
     start_urls = [
-        'https://herramientas.cl/subcategorias/101010/taladros-electricos'
-        #'https://herramientas.cl/subcategorias/101010/taladros-electricos/0/0/0/0/0/12/pagina-2'
+        'https://herramientas.cl/categorias/1040/dremel',
+        'https://herramientas.cl/categorias/1015/estacionarias',
+        'https://herramientas.cl/categorias/1090/herramientas-a-combustion',
+        'https://herramientas.cl/categorias/1010/herramientas-electricas',
+        'https://herramientas.cl/categorias/1020/herramientas-inalambricas',
+        'https://herramientas.cl/categorias/1080/herramientas-manuales',
+        'https://herramientas.cl/categorias/1030/instrumentos-de-medicion',
+        'https://herramientas.cl/categorias/1052/linea-neumatica',
     ]
 
     def parse(self, response):
@@ -18,6 +24,7 @@ class FerretekCrawlerSpider(scrapy.Spider):
         # iterate over search results
         for product in products:
             # define the XPaths
+            XPATH_PRODUCT_FAMILY = "//ul[@class='breadcrumb']//li[@class='active']/text()"
             XPATH_PRODUCT_NAME = ".//a[@class='nombreGrilla link']/text()"
             XPATH_PRODUCT_PRICE = ".//a[@class='valorGrilla link']/text()"
             # define alternative Xpath if product is on sale
@@ -26,6 +33,7 @@ class FerretekCrawlerSpider(scrapy.Spider):
             XPATH_PRODUCT_LINK = ".//a[@class='imgGrilla']/@href"
             XPATH_NEXT_PAGE = "//div[@class='cont100Centro paginador']//a[@class='paginate next']/@href"
 
+            raw_product_family = product.xpath(XPATH_PRODUCT_FAMILY).extract()
             raw_product_name = product.xpath(XPATH_PRODUCT_NAME).extract()
             raw_product_price = product.xpath(XPATH_PRODUCT_PRICE).extract()
             # check if regular price is not available
@@ -39,6 +47,8 @@ class FerretekCrawlerSpider(scrapy.Spider):
             raw_product_link = response.urljoin(link)
 
             # cleaning results
+            product_family = ''.join(raw_product_family).strip(
+            ) if raw_product_family else None
             product_name = ''.join(raw_product_name).strip(
             ) if raw_product_name else None
             product_price = ''.join(raw_product_price).strip(
@@ -51,6 +61,7 @@ class FerretekCrawlerSpider(scrapy.Spider):
             ) if raw_product_link else None
 
             yield {
+                'product_family': product_family,
                 'product_name': product_name,
                 'product_price': product_price,
                 'product_brand': product_brand,
