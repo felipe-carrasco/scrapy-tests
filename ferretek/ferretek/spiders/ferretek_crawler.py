@@ -7,6 +7,7 @@ class FerretekCrawlerSpider(scrapy.Spider):
     name = 'ferretek_crawler'
     allowed_domains = ['herramientas.cl']
     start_urls = [
+        # línea herramientas completa
         'https://herramientas.cl/categorias/1040/dremel',
         'https://herramientas.cl/categorias/1015/estacionarias',
         'https://herramientas.cl/categorias/1090/herramientas-a-combustion',
