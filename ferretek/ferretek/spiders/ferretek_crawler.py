@@ -4,6 +4,7 @@ import re
 
 
 class FerretekCrawlerSpider(scrapy.Spider):
+    """A Class Spider to scrape data from herramientas.cl"""
     name = 'ferretek_crawler'
     allowed_domains = ['herramientas.cl']
     start_urls = [
@@ -19,7 +20,7 @@ class FerretekCrawlerSpider(scrapy.Spider):
     ]
 
     def parse(self, response):
-        """Process Ferretek(herramientas.cl) products"""
+        """Process herramientas.cl (ferretek) products"""
         products = response.xpath("//div[@class='grilla grilla-dos']")
 
         # iterate over search results

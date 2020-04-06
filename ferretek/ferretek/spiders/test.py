@@ -7,3 +7,7 @@ print(f"Título:\t\t{url.title()}")
 price = ' $58.990'
 
 print(re.sub(' |\$|\.', '', price))
+
+sku = 'SKU: 123987'
+
+print(sku.replace('SKU: ', ''))
