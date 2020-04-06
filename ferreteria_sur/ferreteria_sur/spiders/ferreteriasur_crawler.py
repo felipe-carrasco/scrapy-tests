@@ -22,6 +22,7 @@ class FerreteriasurCrawlerSpider(scrapy.Spider):
             XPATH_PRODUCT_SKU = ".//div[@class='produc-sku']/text()"
             XPATH_PRODUCT_NAME = ".//a[@class='product-item-link']/text()"
             XPATH_PRODUCT_PRICE = ".//span[@class='price']/text()"
+            XPATH_NEXT_PAGE = "//div[@class='pages']//a[@class='action  next']/@href"
 
             # store product result in variable
             raw_product_link = product.xpath(XPATH_PRODUCT_LINK).extract()
@@ -48,3 +49,8 @@ class FerreteriasurCrawlerSpider(scrapy.Spider):
                 'product_price': product_price,
                 'product_link': product_link
             }
+
+            # follow pagination link
+            next_page = product.xpath(XPATH_NEXT_PAGE).get()
+            if next_page:
+                yield scrapy.Request(url=next_page, callback=self.parse)
