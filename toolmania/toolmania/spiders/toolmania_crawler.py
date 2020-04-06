@@ -7,7 +7,11 @@ class ToolmaniaCrawlerSpider(scrapy.Spider):
     """A Class Spider to scrape data from toolmania.cl"""
     name = 'toolmania_crawler'
     allowed_domains = ['toolmania.cl']
-    start_urls = ['https://www.toolmania.cl/rotomartillos-252']
+    start_urls = [
+        #'https://www.toolmania.cl/rotomartillos-252'
+        # url for whole category
+        'https://www.toolmania.cl/herramientas-electricas-248'
+    ]
 
     def parse(self, response):
         """Process toolmania.cl products"""
@@ -17,29 +21,30 @@ class ToolmaniaCrawlerSpider(scrapy.Spider):
         # iterate over search results
         for product in products:
             # define xpaths
-            XPATH_PRODUCT_TYPE = "//h1[@class='page-title']/text()"
+            # has to remove type as it is not shown
+            #XPATH_PRODUCT_TYPE = "//h1[@class='page-title']/text()"
             XPATH_PRODUCT_BRAND = ".//h4[@class='product-manufacturer']/text()"
-            XPATH_PRODUCT_NAME = ".//h2[@class='product-name']//a/text()"
+            XPATH_PRODUCT_NAME = ".//h3[@class='product-name']//a/text()"
             XPATH_PRODUCT_PRICE = ".//span[@class='price']/@content"
             XPATH_PRODUCT_LINK = ".//a[@class='thumbnail product-thumbnail']/@href"
             XPATH_NEXT_PAGE = "//li[@class='page-item directional js-search-link']//a[@rel='next']/@href"
 
             # store product result in variable
-            raw_product_type = product.xpath(XPATH_PRODUCT_TYPE).extract()
+            #raw_product_type = product.xpath(XPATH_PRODUCT_TYPE).extract()
             raw_product_brand = product.xpath(XPATH_PRODUCT_BRAND).extract()
             raw_product_name = product.xpath(XPATH_PRODUCT_NAME).extract()
             raw_product_price = product.xpath(XPATH_PRODUCT_PRICE).extract()
             raw_product_link = product.xpath(XPATH_PRODUCT_LINK).extract()
 
             # sanitize results
-            product_type = raw_product_type
+            #product_type = raw_product_type
             product_brand = raw_product_brand
             product_name = raw_product_name
             product_price = raw_product_price
             product_link = raw_product_link
 
             yield {
-                'product_type': raw_product_type,
+                #'product_type': raw_product_type,
                 'product_brand': raw_product_brand,
                 'product_name': raw_product_name,
                 'product_price': raw_product_price,
