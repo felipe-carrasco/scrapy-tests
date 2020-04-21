@@ -8,50 +8,44 @@ class ToolmaniaCrawlerSpider(scrapy.Spider):
     name = 'toolmania_crawler'
     allowed_domains = ['toolmania.cl']
     start_urls = [
-        #'https://www.toolmania.cl/rotomartillos-252'
+        'https://www.toolmania.cl/rotomartillos-252'
         # url for whole category
-        'https://www.toolmania.cl/herramientas-electricas-248'
+        #'https://www.toolmania.cl/herramientas-electricas-248'
     ]
 
     def parse(self, response):
         """Process toolmania.cl products"""
-        products = response.xpath(
-            "//div[@class='col-6 col-md-4 col-lg-3 pt-4']")
-
-        # iterate over search results
+        # define product url xpath
+        XPATH_PRODUCT_LINK = "//a[@class='thumbnail product-thumbnail']/@href"
+        products = response.xpath(XPATH_PRODUCT_LINK).extract()
         for product in products:
-            # define xpaths
-            # has to remove type as it is not shown
-            #XPATH_PRODUCT_TYPE = "//h1[@class='page-title']/text()"
-            XPATH_PRODUCT_BRAND = ".//h4[@class='product-manufacturer']/text()"
-            XPATH_PRODUCT_NAME = ".//h3[@class='product-name']//a/text()"
-            XPATH_PRODUCT_PRICE = ".//span[@class='price']/@content"
-            XPATH_PRODUCT_LINK = ".//a[@class='thumbnail product-thumbnail']/@href"
-            XPATH_NEXT_PAGE = "//li[@class='page-item directional js-search-link']//a[@rel='next']/@href"
+            url = product
+            yield scrapy.Request(url, callback=self.parse_product)
 
-            # store product result in variable
-            #raw_product_type = product.xpath(XPATH_PRODUCT_TYPE).extract()
-            raw_product_brand = product.xpath(XPATH_PRODUCT_BRAND).extract()
-            raw_product_name = product.xpath(XPATH_PRODUCT_NAME).extract()
-            raw_product_price = product.xpath(XPATH_PRODUCT_PRICE).extract()
-            raw_product_link = product.xpath(XPATH_PRODUCT_LINK).extract()
+        # follow pagination link
+        XPATH_NEXT_PAGE = "//li[@class='page-item directional js-search-link']//a[@rel='next']/@href"
+        next_page = response.xpath(XPATH_NEXT_PAGE).get()
+        if next_page:
+            yield scrapy.Request(url=next_page, callback=self.parse)
 
-            # sanitize results
-            #product_type = raw_product_type
-            product_brand = raw_product_brand
-            product_name = raw_product_name
-            product_price = raw_product_price
-            product_link = raw_product_link
+    def parse_product(self, response):
+        # iterate over search results
+        XPATH_SINGLE_PRODUCT = "//div[@class='single-product']"
+        for product in response.xpath(XPATH_SINGLE_PRODUCT):
+            # define xpaths for product details
+            XPATH_PRODUCT_MODEL = ".//h5[@class='product-reference-single']/text()"
+            XPATH_PRODUCT_NAME = ".//h1[@class='product-name-single mb-md-4']/text()"
+            XPATH_PRODUCT_PRICE = ".//div[@class='product-prices margin__bottom__20']//span[@itemprop='price']/@content"
+
+            product_model = product.xpath(XPATH_PRODUCT_MODEL).get()
+            # clean product model
+            product_model = re.sub('Código de referencia: ', '', product_model)
+            # get current url
+            product_link = response.url
 
             yield {
-                #'product_type': raw_product_type,
-                'product_brand': raw_product_brand,
-                'product_name': raw_product_name,
-                'product_price': raw_product_price,
-                'product_link': raw_product_link
+                'product_model': product_model,
+                'product_name': product.xpath(XPATH_PRODUCT_NAME).extract(),
+                'product_price': product.xpath(XPATH_PRODUCT_PRICE).extract(),
+                'product_link': product_link,
             }
-
-            # follow pagination link
-            next_page = product.xpath(XPATH_NEXT_PAGE).get()
-            if next_page:
-                yield scrapy.Request(url=next_page, callback=self.parse)

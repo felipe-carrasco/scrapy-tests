@@ -1,0 +1,746 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"raw",
+				"raw_product_link\tstatement"
+			],
+			[
+				"prod",
+				"product_link\tstatement"
+			],
+			[
+				"produ",
+				"product-manufacturer"
+			],
+			[
+				"XP",
+				"XPATH_PRODUCT_BRAND\tstatement"
+			],
+			[
+				"pod",
+				"product_link"
+			],
+			[
+				"X",
+				"XPATH_PRODUCT_PRICE\tstatement"
+			],
+			[
+				"ra",
+				"raw_product_link\tstatement"
+			],
+			[
+				"prd",
+				"product_family\tstatement"
+			],
+			[
+				"next",
+				"next_page\tstatement"
+			],
+			[
+				"nex",
+				"next_page_relative\tstatement"
+			],
+			[
+				"res",
+				"response\tparam"
+			],
+			[
+				"NEXT",
+				"next_page_url"
+			],
+			[
+				"XPA",
+				"XPATH_PRODUCT_LINK\tstatement"
+			],
+			[
+				"pr",
+				"product_link\tstatement"
+			],
+			[
+				"PROD",
+				"product\tstatement"
+			],
+			[
+				"gr",
+				"groups\tstatement"
+			],
+			[
+				"subm",
+				"submission_dicts\tstatement"
+			],
+			[
+				"submi",
+				"submission_dict\tstatement"
+			],
+			[
+				"su",
+				"submission_dict\tstatement"
+			],
+			[
+				"sub",
+				"submission"
+			],
+			[
+				"stat",
+				"status_code"
+			],
+			[
+				"sumb",
+				"submission_ids\tstatement"
+			],
+			[
+				"rep",
+				"repo_url\tstatement"
+			],
+			[
+				"repo",
+				"repo_links\tstatement"
+			],
+			[
+				"la",
+				"labels\tstatement"
+			],
+			[
+				"gra",
+				"graph_objs\tmodule"
+			],
+			[
+				"ke",
+				"keys"
+			],
+			[
+				"resp",
+				"response_dict\tstatement"
+			],
+			[
+				"_",
+				"_fun_function"
+			],
+			[
+				"post",
+				"post_data"
+			],
+			[
+				"url",
+				"urlopen\tfunction"
+			],
+			[
+				"requ",
+				"request"
+			],
+			[
+				"ur",
+				"urllib3\tmodule"
+			],
+			[
+				"req",
+				"requests\tmodule"
+			],
+			[
+				"coo",
+				"CookieJar"
+			],
+			[
+				"web",
+				"webPassword"
+			],
+			[
+				"usernam",
+				"username"
+			],
+			[
+				"log",
+				"login_page\tstatement"
+			],
+			[
+				"print",
+				"printer\tstatement"
+			],
+			[
+				"cooki",
+				"cookielib"
+			],
+			[
+				"de",
+				"deck\tstatement"
+			],
+			[
+				"ran",
+				"rank"
+			],
+			[
+				"break",
+				"breakpoint\tfunction"
+			],
+			[
+				"al",
+				"all_eq_data\tstatement"
+			],
+			[
+				"plot",
+				"plotly\tmodule"
+			],
+			[
+				"for",
+				"for\tFor Loop"
+			],
+			[
+				"pl",
+				"plot"
+			],
+			[
+				"hig",
+				"highs"
+			],
+			[
+				"h",
+				"highs"
+			],
+			[
+				"hea",
+				"header"
+			],
+			[
+				"head",
+				"header_row"
+			],
+			[
+				"die",
+				"die_1"
+			],
+			[
+				"di",
+				"die_2"
+			],
+			[
+				"y",
+				"y_axis_config"
+			],
+			[
+				"x_",
+				"x_axis_config"
+			],
+			[
+				"freq",
+				"frequencies"
+			],
+			[
+				"fre",
+				"frequencies"
+			],
+			[
+				"resu",
+				"results"
+			],
+			[
+				"poi",
+				"point_numbers"
+			],
+			[
+				"x",
+				"x_values"
+			],
+			[
+				"y_",
+				"y_step"
+			],
+			[
+				"x_d",
+				"x_distance"
+			],
+			[
+				"n",
+				"número"
+			],
+			[
+				"fil",
+				"file_object"
+			],
+			[
+				"filen",
+				"filename"
+			],
+			[
+				"fin",
+				"filename"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "toolmania/toolmania/spiders/toolmania_crawler.py",
+			"settings":
+			{
+				"buffer_size": 2375,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ferreteria_sur/ferreteria_sur/spiders/ferreteriasur_crawler.py",
+			"settings":
+			{
+				"buffer_size": 2377,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"Anaconda: Display object docs"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/felipe/Python/Scrap"
+	],
+	"file_history":
+	[
+		"/home/felipe/Python/Scrap/ferretek/ferretek/spiders/test.py",
+		"/home/felipe/Python/Scrap/ferretek/ferretek/spiders/ferretek_crawler.py",
+		"/home/felipe/Python/Scrap/ferreteria_sur/ferreteria_sur/items.py",
+		"/home/felipe/Python/Scrap/scrapy_alibaba/scrapy_alibaba/spiders/alibaba_crawler.py",
+		"/home/felipe/Python/Scrap/scrapy_alibaba/scrapy_alibaba/settings.py",
+		"/home/felipe/Python/Automate/regex.py",
+		"/home/felipe/Python/CrashCourse/data_project/hn_submissions.py",
+		"/home/felipe/Python/CrashCourse/data_project/python_repos_visual.py",
+		"/home/felipe/Python/URL_Xerox.txt",
+		"/home/felipe/Python/contabilidad.py",
+		"/home/felipe/untitled.html",
+		"/home/felipe/.cache/kioexec/krun/45201_0/aBgBx8Z",
+		"/home/felipe/Python/Fluent Python/card_deck.py",
+		"/home/felipe/Python/CrashCourse/data_project/eq_world_map.py",
+		"/home/felipe/Python/CrashCourse/data_project/eq_explore_data.py",
+		"/home/felipe/.config/sublime-text-3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/home/felipe/.config/sublime-text-3/Packages/User/sublime_jedi.sublime-settings",
+		"/home/felipe/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/felipe/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/felipe/.config/sublime-text-3/Packages/User/Python.sublime-settings",
+		"/home/felipe/Python/CrashCourse/data_project/sitka_highs.py",
+		"/home/felipe/Python/CrashCourse/data_project/die.py",
+		"/home/felipe/Python/CrashCourse/data_project/die_visual.py",
+		"/home/felipe/Python/CrashCourse/data_project/rw_visual.py",
+		"/home/felipe/Python/CrashCourse/data_project/random_walk.py",
+		"/home/felipe/Python/CrashCourse/data_project/mpl_squares.py",
+		"/home/felipe/Python/CrashCourse/data_project/scatter_squares.py",
+		"/home/felipe/Python/CrashCourse/ejercicios/10_leonor.py",
+		"/home/felipe/Python/CrashCourse/ejercicios/10_guests.py",
+		"/home/felipe/Python/CrashCourse/10_common_words.py",
+		"/home/felipe/Python/CrashCourse/10_cats_dogs.py",
+		"/home/felipe/Python/CrashCourse/cats.txt",
+		"/home/felipe/Python/CrashCourse/dogs.txt",
+		"/home/felipe/Python/CrashCourse/10_division-calculator.py",
+		"/home/felipe/Python/CrashCourse/10_exceptions.py",
+		"/home/felipe/Python/CrashCourse/10_leonor.py",
+		"/home/felipe/Python/CrashCourse/guests.txt",
+		"/home/felipe/Python/Django/mb/mb_project/settings.py",
+		"/home/felipe/Python/CrashCourse/my_car.py",
+		"/home/felipe/Python/CrashCourse/7-4_pizza_toppings.py",
+		"/home/felipe/Python/CrashCourse/dict_alien.py",
+		"/home/felipe/Python/Django/mb/posts/models.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"xerox"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "toolmania/toolmania/spiders/toolmania_crawler.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2318,
+								2318
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ferreteria_sur/ferreteria_sur/spiders/ferreteriasur_crawler.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1451,
+								1451
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 576.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 178.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "scrapy.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 337.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
